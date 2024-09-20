@@ -15,19 +15,19 @@ This project implements a chatbot that simulates a negotiation process between a
 - `langchain-google-genai`
 - `langchain-core`
   
-### Usage
+## Usage
 When you run the script, the chatbot will initiate the negotiation by offering a starting price for a product. The user (customer) can interact with the chatbot in the following ways:
-# Accept the bot’s offer: 
+### Accept the bot’s offer: 
   Finalizes the deal at the current price.
-# Reject the offer: 
+### Reject the offer: 
   Ends the negotiation.
-# Counteroffer: 
+### Counteroffer: 
   Propose a new price, and the bot will respond with a negotiation strategy (e.g., accept, reject, or counteroffer based on your input).
 
-### How It Works
-# Initial Offer: 
+## How It Works
+### Initial Offer: 
   The bot starts by offering a base price (e.g., $100).
-# AI Negotiation: 
+### AI Negotiation: 
   The Gemini model is used to generate dynamic responses during the negotiation process. When the user makes an offer, the chatbot will query the model and   generate a response based on the input.
-# Decrementing Price: 
+### Decrementing Price: 
   The bot will gradually reduce its price (within limits) during the negotiation, but will not go below a predefined minimum price.
